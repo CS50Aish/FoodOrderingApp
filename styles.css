@@ -124,6 +124,30 @@ body{
     text-align: center;
 }
 
+#search-btn{
+    display: none;
+}
+
+.header .navbar{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: var(--bg-color-1);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 25rem;
+    transform-origin: top right;
+}
+
+.header .navbar a{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    border-radius: 0.5rem;
+}
+
 /* Home Section */
 
 section{
