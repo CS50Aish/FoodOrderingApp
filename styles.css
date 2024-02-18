@@ -140,7 +140,7 @@ body{
     transform: scale(0);
 }
 
-.header .navbar .active{
+.header .navbar.active{
     transform: scale(1);
 }
 
@@ -510,3 +510,48 @@ li{
     color: var(--orange);
 }
 
+/* Making the Website Responsive */
+
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 768px){
+    .header .navbar{
+        right: 2rem;
+    }
+    #search-btn{
+        display: inline-block;
+    }
+    .header .search-form{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        background: var(--bg-color-1);
+        border-radius: 0.5rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    .header .search-form.active{
+        transform: scale(1);
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .inputBox input{
+        width: 100%;
+    }
+}
