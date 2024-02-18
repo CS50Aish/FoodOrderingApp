@@ -141,7 +141,7 @@ section{
     padding: 1rem;
 }
 
-.form-container form .btn{
+.form-container form .inputBox .btn{
     flex: 1 1 23rem;
     margin-top: 25px;
 }
@@ -207,5 +207,94 @@ section{
     color: var(--text-color-2);
     padding: 0.5rem 0;
     line-height: 1.7;
+}
+
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing .box-container .box{
+    background: var(--bg-color-1);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.pricing .box-container .box h3{
+    font-size: 2rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+    background: var(--bg-color-2);
+    border-radius: 0.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+.pricing .box-container .box .price{
+    padding-top: 2rem;
+}
+
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    color: var(--text-color-2);
+    text-decoration: none;
+}
+
+.pricing .box-container .box .price .amount{
+    font-size: 5rem;
+    color: var(--text-color-1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.packages .box ul{
+    padding: 0.5rem 0;
+}
+
+.pricing .box ul li{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+}
+
+/* Contact */
+
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    box-shadow: var(--bg-color-1);
+    text-transform: none;
+    margin: 0.7rem 0;
+    border-radius: 0.5rem;
+}
+
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact form .inputBox input{
+    width: 49%;
 }
 
