@@ -137,6 +137,11 @@ body{
     box-shadow: var(--box-shadow);
     width: 25rem;
     transform-origin: top right;
+    transform: scale(0);
+}
+
+.header .navbar .active{
+    transform: scale(1);
 }
 
 .header .navbar a{
@@ -146,6 +151,12 @@ body{
     font-size: 1.5rem;
     color: var(--text-color-1);
     border-radius: 0.5rem;
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+    background: var(--bg-color-2);
+    padding-left: 2rem;
 }
 
 /* Home Section */
