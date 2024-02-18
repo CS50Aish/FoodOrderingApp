@@ -9,6 +9,8 @@
     outline: none;
     border: none;
     text-decoration: none;
+    transition: all 0.2s linear;
+    text-transform: capitalize;
 }
 
 html {
@@ -28,4 +30,57 @@ html {
 
 body{
     background: var(--bg-color-2);
+}
+
+/* Home Section */
+
+section{
+    padding: 2rem 7%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    background: #fff;
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .content h3{
+    color: var(--text-color-1);
+    font-size: 4rem;
+}
+
+.home .content p{
+    color: var(--text-color-2);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.7;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #ab6806;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
 }
